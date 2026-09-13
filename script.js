@@ -1,15 +1,16 @@
-function orderFood(){
-const restaurantName = "Delicious Restaurant";
+function orderFood(itemName,itemPrice){
+const restaurantName = "House of Flavors;
 let orderStatus = true;
-let price = 200;
 let quantity = 1;
-let total = price * quantity;
+let total =itemPrice * quantity;
 if(orderStatus){
-    console.log("Order received");
-    console.log("Total price: "+ total);
-return "Your order from " + restaurantName +" has been received!";
-}else{
-    return"Sorry,your order cannot be completed.";
-}
-}
-console.log(orderFood()); 
+    console.log("Order received: " + itemName);
+    console.log("Total price: " + total + "EGP");
+    alert(`Your order from ${restaurantName} :
+-Item: ${itemName}
+-Total Price: ${total} EGP
+Your order has been received!`);
+    }else{
+    alert("Sorry,your order cannot be completed.");
+    }
+    }

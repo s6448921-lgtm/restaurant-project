@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House of Flavors</title>
+    <link rel="stylesheet"href="style.css">
+</head>
+<body>
+    <header>
+    <nav class="navbar">
+    <h1>House of Flavors</h1>
+ <ul>
+    <li><a href="#food">Food Menu</a></li>
+    <li><a href="#drinks">Drinks</a></li>
+    <li><a href="https://www.google.com" target="-blank">Visit Google</a></li>
+ </ul>
+    </nav>
+    </header>
+    <div class="main-container">
+<header class="hero section">
+    <h2>Welcome to House of Flavors</h2>
+<img src="restaurant.jpg" alt="Restaurant Main Dish" class="hero-img">
+</header>
+<section id="food" class="menu-section">
+<h2>Our Menu</h2>
+<div class="items-grid">
+<div class="card">
+<img src="pasta.webp" alt="Pasta">
+<h3>Pasta</h3>
+<p class="price">150 EGP</p>
+<button onclick="orderFood('Pasta', 150)">Order</button>
+</div>
+<div class="card">
+<img src="pizza.jpg" alt="Pizza">
+<h3>Pizza</h3>
+<p class="price">200 EGP</p>
+<button onclick="orderFood('Pizza',200)">Order</button>
+</div>
+<div class="card">
+<img src="sushi.jpg" alt="Sushi">
+<h3>Sushi</h3>
+<p class="price">300 EGP</p>
+<button onclick="orderFood('Sushi', 300)">Order</button>
+</div>
+<div class="card">
+<img src="burger.jpg" alt="Burger">
+<h3>Burger</h3>
+<p class="price">225 EGP</p>
+<button onclick="orderFood('Burger', 225)">Order</button>
+</div>
+<div class="card">
+<img src="fried chicken.jpg" alt="Fried Chicken">
+<h3>Fried Chicken</h3>
+<p class="price">250 EGP</p>
+<button onclick="orderFood('Fried Chicken', 250)">Order</button>
+</div>
+</div>
+</section>
+<section id="drinks" class="menu-section">
+<h2>Drinks</h2>
+<div class="items-grid">
+<div class="card">
+<img src="cola.webp" alt="Cola">
+<h3>Cola</h3>
+<p class="price">30 EGP</p>
+<button onclick="orderFood('Cola', 30)">Order</button>
+</div>
+<div class="card">
+<img src="lemonade.jpg" alt="Lemonade">
+<h3>Lemonade</h3>
+<p class="price">45 EGP</p>
+<button onclick="orderFood('Lemonade', 45)">Order</button>
+</div>
+<div class="card">
+<img src="latte.jpg" alt="Latte">
+<h3>Latte</h3>
+<p class="price">65 EGP</p>
+<button onclick="orderFood('Latte', 65)">Order</button>
+</div>
+<div class="card">
+<img src="hot chocolate.webp" alt="Hot Chocolate">
+<h3>Hot Chocolate</h3>
+<p class="price">70 EGP</p>
+<button onclick="orderFood('Hot Chocolate',70)">Order</button>
+</div>
+</div>
+</section>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
+
